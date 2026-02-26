@@ -1,19 +1,78 @@
 
-@media (min-width: 56em) {
+:root {
+    --up-move: -350px; 
+}
+
+@media (min-width: 1030px) {
     .welcome-box {
         margin-left: 10%;
+        width: 500px;
     }
     .credits-jubair {
         margin-left: 80%;
     }
+    .welcome-para {
+        line-height: 3rem;
+        font-size: 1.4rem;
+    }
+    .text-mirpur {
+        transform: translateY(var(--up-move));
+    }
+    .vis-on-mobile {
+        display: none;
+    }
 }
-@media (max-width:56em) {
+@media (max-width:1030px) {
     .cool-back {
         justify-items: center;
     }
     .mirpur {
         font-size: 12px;
     }
+    .welcome-box {
+        width: 500px;
+    }
+    .welcome-para {
+        line-height: 3rem;
+        font-size: 1.4rem;
+    }
+    .text-mirpur {
+        transform: translateY(var(--up-move));
+    }
+    .vis-on-mobile {
+        display: none;
+    }
+
+@media (max-width:900px) {
+    .welcome-box {
+        width: 300px;
+        height: auto;
+        margin-top: 300px;
+    }
+    .welcome-para {
+        font-size: 18px;
+        line-height: 2rem;
+    }
+    .mirpur {
+        font-size: large;
+        transform: translateY(clac(var(--up-move)));
+    }
+    #invis-on-mobile {
+        display: none;
+        visibility: hidden;
+        opacity: 0%;
+    }
+    #Bangla {
+        display: none;
+    }
+    .vis-on-mobile {
+        display: grid;
+        align-items: start;
+    }
+    .sub-heading {
+        font-size: 1em;
+    }
+}
 
 }
 html, body {
@@ -36,6 +95,37 @@ a {
     color:lightblue;
     font-style: italic;
 }
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 110vh;
+    width: 95vw;
+    z-index: 999;
+    background-color: #2b264692;
+    backdrop-filter: blur(10px);
+    color: #ffaf7a;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: flex-start;
+    padding-left: 5vw;
+    padding-top: 5vw;
+}
+#nav-main {
+    font-weight: normal;
+    font-size: x-large;
+}
+.sidebar li {
+    list-style: none;
+}
+
+nav {
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 2rem;
+    font-size: larger;
+}
 header {
     display: flex;
     flex-direction: row;
@@ -51,7 +141,7 @@ header {
     top: 0;
     left: 0;
     margin-bottom: 0.1em;
-    z-index: 999;
+    z-index: 998;
     position: fixed;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.751);
 }
@@ -88,17 +178,31 @@ header {
     margin-left: 20;
     font-weight: 500;
 }
-#Bangla {
-    margin: 4rem;
+.Bangla {
+    margin-left: 1rem;
+    width: 8rem;
+    color: #0f0f1a;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 600;
     background-color: #ffaf7a;
-    color: #0f0f1d;
+    transition: 200ms ease-in;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
     text-decoration: none;
-    margin-right: 10rem;
+    display:inline-block;
+    align-items: center;
+    padding: 20px;
+    font-style: normal ;
+    margin: 0px 100px;
 }
-#Bangla:hover {
+.Bangla:hover {
 
     background-color: rgb(127, 255, 127);
     border: 2px solid rgb(255, 110, 110);
+    translate: -5px -5px;   
 
 }
 /*everything above this until "header" is the style of the header or a part of the header, i know this is insane but im making this website for a project so whatever*/
@@ -173,10 +277,9 @@ header {
 .welcome-box {
     position: relative;
     margin-top: 10%;
-    width: 500px;
     height: auto;
     padding: 10px 20px;
-    background-color: #b4a0ff16;
+    background-color: #3700ff16;
     /*this filter is to achieve a glass effect on the background of the welcome message*/
     backdrop-filter: blur(10px);
     border-radius: 60px;
@@ -203,9 +306,11 @@ header {
     animation: intro-off 5s linear 1 forwards;
     display: grid;
     inset-inline: 0; 
-    transform: translateY(-300px);
     color: #92abff;
     font-size: larger;
+}
+.text-mirpur {
+    text-shadow: 0px 0px 20px #000000;
 }
 /*a credits box that credits the credited owner of the image on the top of the website*/
 .credits-jubair {
@@ -373,4 +478,5 @@ footer {
         font-family: 'karla', sans-serif;
         text-shadow: 0px 0px 20px #ffffffb3;
     }
+}
 }
