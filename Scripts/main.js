@@ -1,4 +1,4 @@
-function updateHeaderPosition() {
+function updateHeaderPosition() {function updateHeaderPosition() {
   const header = document.getElementById('header');
   
   /* this is a javascipt code to make sure that the website look fine on mobile, basically the headers position is fixed.
@@ -10,7 +10,7 @@ function updateHeaderPosition() {
   const headerHeight = header.offsetHeight;
 
 
-  if (headerHeight > viewportHeight * 0.4) {
+  if (headerHeight > viewportHeight * 0.3) {
     header.classList.remove('fixed-header');
     header.classList.add('normal-header');
   } else {
@@ -26,5 +26,10 @@ window.addEventListener()
 
 updateHeaderPosition();
 
+
+function showSidebar() {
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display ='flex'
+}
 
 
