@@ -1,4 +1,7 @@
-
+*{
+    margin-left: 0;
+    margin-right: 0;
+}
 :root {
     --up-move: -350px; 
     --background: #0f0f1a;
@@ -28,6 +31,11 @@
         top: 0;
         left: 0;
     }
+    .svg-holder {
+        display: grid;
+        position: absolute;
+        top: 45%
+    }
 }
 @media (max-width:1030px) {
     .cool-back {
@@ -51,8 +59,14 @@
     }
     header {
         position: fixed;
-        top: 0;
+        top: 0px;
         left: 0;
+        justify-content: flex-start;
+    }
+    .svg-holder {
+        display: grid;
+        position: absolute;
+        top: 45%
     }
 
 @media (max-width:900px) {
@@ -88,6 +102,12 @@
         position: relative;
         top: 0;
         left: 0;
+        justify-content: flex-start;
+    }
+    .svg-holder {
+        display: grid;
+        position: absolute;
+        top: 45%
     }
 }
 
@@ -133,6 +153,9 @@ a {
     padding-left: 5vw;
     padding-top: 5vw;
 }
+.vis-on-mobile {
+    margin-left: 70vw;
+}
 #nav-main {
     font-weight: normal;
     font-size: 18px;
@@ -160,7 +183,7 @@ header {
     font-weight: 300;
     font-optical-sizing: auto;
     margin-bottom: 0.1em;
-    z-index: 998;
+    z-index: 997;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.751);
 }
 /*
@@ -250,7 +273,7 @@ header {
 }
 .button:hover {
     background-color: var(--main-text);
-    color: var(--main-text); 
+    color: var(--background); 
     border: 0px;
     translate: -5px -5px;   
 }
@@ -319,8 +342,8 @@ header {
     justify-items: center;
     align-content: center;
     justify-content: center;
-    position: absolute;
     inset-inline: 0;
+
 }
 .mirpur {
     opacity: 0%;
@@ -358,12 +381,15 @@ footer {
     background-image: url(https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/i-made-shardscapes-wallpapers-for-both-your-phone-and-pc-v0-ofyzk1kayvzc1.jpg);
 }
 /* animation that basically will make the welcome box show up after a given time */
+
 @keyframes slick-intro-on {
     0% {
         opacity:0% ;
+        visibility: hidden;
     }
     100% {
         opacity: 100%;
+        visibility: visible;
     }
 }
 
