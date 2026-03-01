@@ -1,190 +1,190 @@
-*{
-    margin-left: 0;
-    margin-right: 0;
+* {
+  margin-left: 0;
+  margin-right: 0;
 }
 :root {
-    --up-move: -350px; 
-    --background: #0f0f1a;
-    --main-text: #ffaf7a;
+  --up-move: -350px;
+  --background: oklab(17.432% 0.00541 -0.02204);
+  --main-text: oklab(81.974% 0.06852 0.09393);
 }
 
 @media (min-width: 1030px) {
-    .welcome-box {
-        margin-left: 10%;
-        width: 500px;
-    }
-    .credits-jubair {
-        margin-left: 80%;
-    }
-    .welcome-para {
-        line-height: 3rem;
-        font-size: 1.4rem;
-    }
-    .text-mirpur {
-        transform: translateY(var(--up-move));
-    }
-    .vis-on-mobile {
-        display: none;
-    }
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-    .svg-holder {
-        display: grid;
-        position: absolute;
-        top: 45%
-    }
-}
-@media (max-width:1030px) {
-    .cool-back {
-        justify-items: center;
-    }
-    .mirpur {
-        font-size: 12px;
-    }
-    .welcome-box {
-        width: 500px;
-    }
-    .welcome-para {
-        line-height: 3rem;
-        font-size: 1.4rem;
-    }
-    .text-mirpur {
-        transform: translateY(var(--up-move));
-    }
-    .vis-on-mobile {
-        display: none;
-    }
-    header {
-        position: fixed;
-        top: 0px;
-        left: 0;
-        justify-content: flex-start;
-    }
-    .svg-holder {
-        display: grid;
-        position: absolute;
-        top: 45%
-    }
-
-@media (max-width:900px) {
-    .welcome-box {
-        width: 300px;
-        height: auto;
-        margin-top: 300px;
-    }
-    .welcome-para {
-        font-size: 18px;
-        line-height: 2rem;
-    }
-    .mirpur {
-        font-size: large;
-        transform: translateY(clac(var(--up-move)));
-    }
-    #invis-on-mobile {
-        display: none;
-        visibility: hidden;
-        opacity: 0%;
-    }
-    #Bangla {
-        display: none;
-    }
-    .vis-on-mobile {
-        display: grid;
-        align-items: start;
-    }
-    .sub-heading {
-        font-size: 1em;
-    }
-    header {
-        position: relative;
-        top: 0;
-        left: 0;
-        justify-content: flex-start;
-    }
-    .svg-holder {
-        display: grid;
-        position: absolute;
-        top: 45%
-    }
-}
-
-}
-html, body {
-    /*man im glad i learned this existed cause horizontal scrolling was the most annoying thing ever*/
-    overflow-x: hidden;
-}
-body {
-    background-color: var(--background);
-    font-family: "Karla", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-    color: var(--main-text);
-}
-body::selection {
-    color: #000000;
-    background-color: #82ffd599;
-}
-a {
-    color: var(--main-text);
-    text-decoration: none;
-}
-#open-nav-main:hover {
-    backdrop-filter: blur(20px);
-}
-.sidebar {
+  .welcome-box {
+    margin-left: 10%;
+    width: 500px;
+  }
+  .credits-jubair {
+    margin-left: 80%;
+  }
+  .welcome-para {
+    line-height: 3rem;
+    font-size: 1.4rem;
+  }
+  .text-mirpur {
+    transform: translateY(var(--up-move));
+  }
+  .vis-on-mobile {
+    display: none;
+  }
+  header {
     position: fixed;
     top: 0;
-    right: 0;
-    height: 110vh;
-    width: 95vw;
-    z-index: 999;
-    background-color: #2b264692;
-    backdrop-filter: blur(10px);
-    color: var(--main-text);
+    left: 0;
+  }
+  .svg-holder {
+    display: grid;
+    position: absolute;
+    top: 45%;
+  }
+}
+@media (max-width: 1030px) {
+  .cool-back {
+    justify-items: center;
+  }
+  .mirpur {
+    font-size: 12px;
+  }
+  .welcome-box {
+    width: 500px;
+  }
+  .welcome-para {
+    line-height: 3rem;
+    font-size: 1.4rem;
+  }
+  .text-mirpur {
+    transform: translateY(var(--up-move));
+  }
+  .vis-on-mobile {
     display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-items: flex-start;
-    gap: 1.5rem;
-    padding-left: 5vw;
-    padding-top: 5vw;
+  }
+  header {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    justify-content: flex-start;
+  }
+  .svg-holder {
+    display: grid;
+    position: absolute;
+    top: 45%;
+  }
+
+  @media (max-width: 900px) {
+    .welcome-box {
+      width: 300px;
+      height: auto;
+      margin-top: 300px;
+    }
+    .welcome-para {
+      font-size: 18px;
+      line-height: 2rem;
+    }
+    .mirpur {
+      font-size: large;
+      transform: translateY(clac(var(--up-move)));
+    }
+    #invis-on-mobile {
+      display: none;
+      visibility: hidden;
+      opacity: 0%;
+    }
+    #Bangla {
+      display: none;
+    }
+    .vis-on-mobile {
+      display: grid;
+      align-items: start;
+    }
+    .sub-heading {
+      font-size: 1em;
+    }
+    header {
+      position: relative;
+      top: 0;
+      left: 0;
+      justify-content: flex-start;
+    }
+    .svg-holder {
+      display: grid;
+      position: absolute;
+      top: 45%;
+    }
+  }
+}
+html,
+body {
+  /*man im glad i learned this existed cause horizontal scrolling was the most annoying thing ever*/
+  overflow-x: hidden;
+}
+body {
+  background-color: var(--background);
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  color: var(--main-text);
+}
+body::selection {
+  color: #000000;
+  background-color: #82ffd599;
+}
+a {
+  color: var(--main-text);
+  text-decoration: none;
+}
+#open-nav-main:hover {
+  backdrop-filter: blur(20px);
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 110vh;
+  width: 95vw;
+  z-index: 999;
+  background-color: #2b264692;
+  backdrop-filter: blur(10px);
+  color: var(--main-text);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: flex-start;
+  gap: 1.5rem;
+  padding-left: 5vw;
+  padding-top: 5vw;
 }
 .vis-on-mobile {
-    margin-left: 70vw;
+  margin-left: 70vw;
 }
 #nav-main {
-    font-weight: normal;
-    font-size: 18px;
+  font-weight: normal;
+  font-size: 18px;
 }
 .sidebar li {
-    list-style: none;
+  list-style: none;
 }
 
 nav {
-    font-weight: 200;
-    letter-spacing: 1px;
-    line-height: 2rem;
-    font-size: larger;
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  font-size: larger;
 }
 header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: #2f2f3d;
-    width: 120%;
-    height: auto;
-    border-bottom: 2px solid var(--main-text);
-    font-family: "Karla", sans-serif;
-    font-weight: 300;
-    font-optical-sizing: auto;
-    margin-bottom: 0.1em;
-    z-index: 997;
-    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.751);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #2f2f3d;
+  width: 120%;
+  height: auto;
+  border-bottom: 2px solid var(--main-text);
+  font-family: "Karla", sans-serif;
+  font-weight: 300;
+  font-optical-sizing: auto;
+  margin-bottom: 0.1em;
+  z-index: 997;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.751);
 }
 /*
 .fixed-header {
@@ -196,333 +196,335 @@ header {
 }
 */
 .main {
-    font-style: normal;
+  font-style: normal;
 }
 .not-main {
-    font-family: "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: italic;
-    font-variation-settings: "wdth" 94.3;
-    margin-bottom: 2em;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  font-variation-settings: "wdth" 94.3;
+  margin-bottom: 2em;
 }
 .first-header {
-    margin: 10px;
-    line-height: 0.5em;
+  margin: 10px;
+  line-height: 0.5em;
 }
 .images-header {
-    margin: 10px;
+  margin: 10px;
 }
 .link-header {
-    display: flex;
-    justify-self: right;
-    flex-wrap: wrap;
-    align-items: center;
-    height: 5em;
-    margin-left: 20;
-    font-weight: 500;
+  display: flex;
+  justify-self: right;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 5em;
+  margin-left: 20;
+  font-weight: 500;
 }
 .Bangla {
-    margin-left: 1rem;
-    width: 8rem;
-    color: var(--background);
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    font-weight: 600;
-    background-color: var(--main-text);
-    transition: 200ms ease-in;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    display:inline-block;
-    align-items: center;
-    padding: 20px;
-    font-style: normal ;
-    margin: 0px 100px;
+  margin-left: 1rem;
+  width: 8rem;
+  color: var(--background);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  background-color: var(--main-text);
+  transition: 200ms ease-in;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  padding: 20px;
+  font-style: normal;
+  margin: 0px 100px;
 }
 .Bangla:hover {
-
-    background-color: rgb(127, 255, 127);
-    border: 2px solid rgb(255, 110, 110);
-    translate: -5px -5px;   
-
+  background-color: rgb(127, 255, 127);
+  border: 2px solid rgb(255, 110, 110);
+  translate: -5px -5px;
 }
 /*everything above this until "header" is the style of the header or a part of the header, i know this is insane but im making this website for a project so whatever*/
 .button {
-    margin-left: 1rem;
-    width: 8rem;
-    color: var(--main-text);
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    font-weight: 600;
-    background-color: transparent;
-    border: 3px solid var(--main-text);
-    transition: 200ms ease-in;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    display:inline-block;
-    align-items: center;
-    padding: 20px;
-    font-style: normal ;
-
+  margin-left: 1rem;
+  width: 8rem;
+  color: var(--main-text);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  background-color: transparent;
+  border: 3px solid var(--main-text);
+  transition: 200ms ease-in;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+  padding: 20px;
+  font-style: normal;
 }
 .button:hover {
-    background-color: var(--main-text);
-    color: var(--background); 
-    border: 0px;
-    translate: -5px -5px;   
+  background-color: var(--main-text);
+  color: var(--background);
+  border: 0px;
+  translate: -5px -5px;
 }
 /*literally cool-back means cool background, (credits to Jubair, whose picture i used for this)*/
 .cool-back {
-    margin: 0%;
-    position: relative;
-    width: 100vw;
-    display: grid;
-    align-items: center;
-    background-image: url(Mirpur_10_Night_view.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 1000px;
-    left: 0;
-    background-repeat: no-repeat;
+  margin: 0%;
+  position: relative;
+  width: 100vw;
+  display: grid;
+  align-items: center;
+  background-image: url(Mirpur_10_Night_view.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 1000px;
+  left: 0;
+  background-repeat: no-repeat;
 }
 
-.welcome{
-    font-size: 4em;
-    font-weight: 600;
-    animation-name: font-changes;
-    animation-duration: 4s;
-    animation-timing-function: cubic-bezier(.79,-0.06,.1,.68);
-    animation-delay: 5s;
-    text-shadow: 0px 0px 20px #ffffff61;
-    text-align: center;
-    margin-bottom: 10px;
-    z-index: 10;
+.welcome {
+  font-size: 4em;
+  font-weight: 600;
+  animation-name: font-changes;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier(0.79, -0.06, 0.1, 0.68);
+  animation-delay: 5s;
+  text-shadow: 0px 0px 20px #ffffff61;
+  text-align: center;
+  margin-bottom: 10px;
+  z-index: 10;
 }
 .link-to-about {
-    background-color: #1b1b1b99;
-    border-radius: 10px;
-    padding: 2px 5px;
-    text-decoration: underline;
+  background-color: #1b1b1b99;
+  border-radius: 10px;
+  padding: 2px 5px;
+  text-decoration: underline;
 }
 .link-to-about:hover {
-    background-color: #33333399;
+  background-color: #33333399;
 }
 .welcome:hover {
-    text-shadow: none;
-    transition: 500ms ease;
+  text-shadow: none;
+  transition: 500ms ease;
 }
 .welcome-box {
-    position: relative;
-    margin-top: 10%;
-    height: auto;
-    padding: 10px 20px;
-    background-color: #3700ff16;
-    /*this filter is to achieve a glass effect on the background of the welcome message*/
-    backdrop-filter: blur(10px);
-    border-radius: 60px;
-    border-top: 1px solid #9e93ffa0;
-    border-left: 1px solid #a693ffa0;
-    box-shadow: 20px 20px 10px #0f0f1d45;
-    opacity: 0%;
-    animation: slick-intro-on 1.5s ease-out 1 forwards;
-    animation-delay: 5s;
+  position: relative;
+  margin-top: 10%;
+  height: auto;
+  padding: 10px 20px;
+  background-color: #3700ff16;
+  /*this filter is to achieve a glass effect on the background of the welcome message*/
+  backdrop-filter: blur(10px);
+  border-radius: 60px;
+  border-top: 1px solid #9e93ffa0;
+  border-left: 1px solid #a693ffa0;
+  box-shadow: 20px 20px 10px #0f0f1d45;
+  opacity: 0%;
+  animation: slick-intro-on 1.5s ease-out 1 forwards;
+  animation-delay: 5s;
 }
 .svg-holder {
-    opacity: 0%;
-    animation: slick-intro-off 5s linear 1 forwards;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-    justify-content: center;
-    inset-inline: 0;
-
+  opacity: 0%;
+  animation: slick-intro-off 5s linear 1 forwards;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  inset-inline: 0;
 }
 .mirpur {
-    opacity: 0%;
-    animation: intro-off 5s linear 1 forwards;
-    display: grid;
-    inset-inline: 0; 
-    color: #92abff;
-    font-size: larger;
+  opacity: 0%;
+  animation: intro-off 5s linear 1 forwards;
+  display: grid;
+  inset-inline: 0;
+  color: oklch(from var(--background) calc(l + 60) calc(c + 0.45) h);
+  font-size: larger;
 }
 .text-mirpur {
-    text-shadow: 0px 0px 20px #000000;
+  text-shadow: 0px 0px 20px #000000;
 }
 /*a credits box that credits the credited owner of the image on the top of the website*/
 .credits-jubair {
-    display: grid;   
-    height: auto;
-    width: 15em;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 600;
-    color: var(--main-text);
-    background-color: #131428;
-    align-content: center;
-    text-align: center;
-    transform: translateY(-30px);
-    font-size: large;
-    letter-spacing: 2px;
+  display: grid;
+  height: auto;
+  width: 15em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  color: var(--main-text);
+  background-color: hsl(from var(--background) h s calc(l + 3));
+  align-content: center;
+  text-align: center;
+  transform: translateY(-30px);
+  font-size: large;
+  letter-spacing: 2px;
 }
 .teachers-main {
-    position: relative;
-    height: 200vh;
+  position: relative;
+  height: 200vh;
 }
 
-
 footer {
-    background-image: url(https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/i-made-shardscapes-wallpapers-for-both-your-phone-and-pc-v0-ofyzk1kayvzc1.jpg);
+  background-image: url(https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/i-made-shardscapes-wallpapers-for-both-your-phone-and-pc-v0-ofyzk1kayvzc1.jpg);
 }
 /* animation that basically will make the welcome box show up after a given time */
 
 @keyframes slick-intro-on {
-    0% {
-        opacity:0% ;
-        visibility: hidden;
-    }
-    100% {
-        opacity: 100%;
-        visibility: visible;
-    }
+  0% {
+    opacity: 0%;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 100%;
+    visibility: visible;
+  }
 }
 
 /* althoug this animation will turn of the "Mirpur" text after a given time */
 @keyframes slick-intro-off {
-    0% {
-        opacity: 100%;
-    }
-    90% {
-        opacity: 100%;
-    }
-    100% {
-        opacity: 0%;
-        transform: scale(1.3);
-    }
+  0% {
+    opacity: 100%;
+  }
+  90% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    transform: scale(1.3);
+  }
 }
 @keyframes intro-off {
-    0% {
-        opacity: 100%;
-    }
-    90% {
-        opacity: 100%;
-    }
-    100% {
-        opacity: 0%;
-        letter-spacing: 3px;
-    }
+  0% {
+    opacity: 100%;
+  }
+  90% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    letter-spacing: 3px;
+  }
 }
 
 /*the animation that needed so many fonts*/
 @keyframes font-changes {
-    0% {
-        font-family: "Limelight", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        text-shadow: 0px 0px 20px #ffffffb3;
-    }
-    10% {
-        font-family: Arial, Helvetica, sans-serif;
-        font-style: italic;
-        text-shadow: 0px 0px 20px #ffffffb3;
-    }
-    15% {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-style: oblique;
-        text-shadow: 0px 0px 20px #ffffffb3;
-    }
-    20% {
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 3.5em ;
-    }
-    25% {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-style: italic;
-        font-size: 4.5em;
-
-    }
-    30% {
-        font-family: 'Times New Roman', Times, serif;
-        text-shadow: 0px 0px 20px #ffffffb3;
-    }
-    35% {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 3.5em;
-        font-style: italic;
-    }
-    40% {
-        font-family: "Kumar One Outline", system-ui;
-        font-weight: 400;
-        font-style: normal;
-    }
-    45% {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-    50% {
-        font-family: 'Calibri';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 4.5em;
-        text-shadow: 0px 0px 20px #ffffffb3;
-    }
-    55% {
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 3.5em;
-        font-style: italic;
-        text-shadow: 0px 0px 20px #ffffffb3;
-    }
-    60% {
-        font-family: "Roboto Mono", monospace;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: oblique;
-        text-shadow: 0px 0px 20px #ffffffb3;
-    }
-    65% {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 4.4em;
-    }
-    70% {
-        font-family: "Roboto", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 200;
-        font-style: normal;
-        font-variation-settings: "wdth" 100;
-    }
-    75% {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-shadow: 0px 0px 20px #ffffffb3;
-    }
-    80% {
-        font-family: "Farro", sans-serif;
-        font-weight: 400;
-        font-style: italic;
-        font-size: 3.5em;
-
-    }
-    85% {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    90% {
-        font-family: "Oxanium", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 3em;
-    }
-    95% {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont;
-        text-shadow: 0px 0px 20px #ffffffb3;
-        font-size: 3.4em;
-    }
-    100% {
-        font-family: 'karla', sans-serif;
-        text-shadow: 0px 0px 20px #ffffffb3;
-    }
+  0% {
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 0px 0px 20px #ffffffb3;
+  }
+  10% {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-shadow: 0px 0px 20px #ffffffb3;
+  }
+  15% {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-style: oblique;
+    text-shadow: 0px 0px 20px #ffffffb3;
+  }
+  20% {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 3.5em;
+  }
+  25% {
+    font-family:
+      "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 4.5em;
+  }
+  30% {
+    font-family: "Times New Roman", Times, serif;
+    text-shadow: 0px 0px 20px #ffffffb3;
+  }
+  35% {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.5em;
+    font-style: italic;
+  }
+  40% {
+    font-family: "Kumar One Outline", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  45% {
+    font-family:
+      "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+      Arial, sans-serif;
+  }
+  50% {
+    font-family: "Calibri";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.5em;
+    text-shadow: 0px 0px 20px #ffffffb3;
+  }
+  55% {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 3.5em;
+    font-style: italic;
+    text-shadow: 0px 0px 20px #ffffffb3;
+  }
+  60% {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: oblique;
+    text-shadow: 0px 0px 20px #ffffffb3;
+  }
+  65% {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4.4em;
+  }
+  70% {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+  75% {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    text-shadow: 0px 0px 20px #ffffffb3;
+  }
+  80% {
+    font-family: "Farro", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3.5em;
+  }
+  85% {
+    font-family:
+      "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  90% {
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+  }
+  95% {
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont;
+    text-shadow: 0px 0px 20px #ffffffb3;
+    font-size: 3.4em;
+  }
+  100% {
+    font-family: "karla", sans-serif;
+    text-shadow: 0px 0px 20px #ffffffb3;
+  }
 }
