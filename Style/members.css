@@ -4,6 +4,8 @@
 }
 :root {
   --head-2: 30px;
+  --background: oklab(17.432% 0.00541 -0.02204);
+  --main-text: oklab(81.974% 0.06852 0.09393);
 }
 @media (min-width: 900px) {
   .title {
@@ -13,6 +15,10 @@
     display: grid;
     margin-left: 20vw;
     width: 60vw;
+    font-size: 30px;
+  }
+  .sub-bangla {
+    font-size: 50px;
   }
   table {
     width: 60vw;
@@ -31,6 +37,9 @@
   .class-no {
     font-size: 80px;
   }
+  .same-line {
+    gap: 4rem;
+  }
 }
 @media (max-width: 900px) {
   .title {
@@ -39,6 +48,10 @@
   .sub-heading-main {
     margin: 0px;
     width: 100vw;
+    font-size: 25px;
+  }
+  .sub-bangla {
+    font-size: 40px;
   }
   table {
     width: 100vw;
@@ -59,9 +72,12 @@
     font-size: 60px;
     margin-bottom: 0px;
   }
+  .same-line {
+    gap: 1em;
+  }
 }
 .title {
-  color: #9b98ff;
+  color: oklch(from var(--background) calc(l + 0.55) calc(c + 0.05) h);
   font-style: normal;
   text-align: center;
   font-size: 5rem;
@@ -69,10 +85,20 @@
   font-weight: 400;
   font-family: "Oxanium", sans-serif;
 }
+.same-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
 .title-bangla {
   font-family: "Kalaa", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+.sub-heading-main {
+  color: oklch(from var(--background) calc(l + 0.5) calc(c + 0.01) h);
 }
 .text-bangla,
 td {
@@ -80,12 +106,8 @@ td {
   font-weight: 400;
   font-style: normal;
 }
-.sub-bangla {
-  font-size: 35px;
-}
 h2 {
   text-align: center;
-  font-size: 30px;
   letter-spacing: 1px;
   line-height: 3rem;
 }
@@ -112,14 +134,14 @@ table {
 table,
 td {
   justify-self: center;
-  border: 2px solid #0f0f1a;
+  border: 2px solid var(--background);
   border-collapse: collapse;
   text-align: center;
-  color: #0f0f1a;
+  color: var(--background);
 }
 th {
-  border-bottom: 4px solid #0f0f1a;
-  background-color: #fdc3a1;
+  border-bottom: 4px solid var(--background);
+  background-color: oklch(from var(--main-text) calc(l + 5) calc(c + 0.05) h);
 }
 .committee-member {
   font-weight: 400;
