@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Member</title>
+    <title>ICT Club | Members</title>
+    <link rel="icon" type="image/png" href="https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/ict-club-logo-1.png?w=172&h=163">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   
@@ -15,6 +16,11 @@
      <link rel="stylesheet" href="Style\imageduotone.css" />
 
     <!--fonts i used-->
+        <!--this one is solely for the title-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
@@ -34,23 +40,24 @@
 <body>
    <nav>
     <ul class="sidebar">
-       <a onclick="hideSidebar()" id="nav-main"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+      <a onclick="hideSidebar()" id="nav-main"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
       <li><span id="nav-main">ICT club | Mirpur Siddhanta High School
 
       </span></li>
 
        <a id="open-nav-main" href="about.html">About</a>    
-       <a id="open-nav-main" href="#">Join</a>              
-       <a id="open-nav-main" href="">Members</a>           
+       <a id="open-nav-main" href="">Join</a>              
+       <a id="open-nav-main" href="members.html">Members</a>           
        <a href="#" style="margin-top: 2rem;">🌐বাংলা</a>          
     </ul>
    </nav>
 
-  <div class="big-one">
+
+
 <header class="header finisher-header" id="header">
   <div class="first-header">
     <h3 class="not-main">The official website of the</h3>
-    <a class="main" style="font-size: 3em; font-weight: 700; text-decoration: underline dotted #ffaf7a; color: #ffaf7a;" href="index.html">ICT Club</a>
+    <a class="main" href="index.html">ICT Club</a>
     <h3 class="sub-heading" style="line-height: 0.5em; letter-spacing: 1px; font-weight: 300;">Mirpur Siddhanta High School (established 1916)</h3>
   </div>
 <!--this section holds all the logos in the header-->
@@ -66,7 +73,7 @@
 
     <a href="about.html" class="button" id="invis-on-mobile">About</a>
 
-    <a title="Join our club" class="button" id="invis-on-mobile">Join</a>
+    <a href="join.html" title="Join our club" class="button" id="invis-on-mobile">Join</a>
 
     <a href="" class="button" id="invis-on-mobile">Members</a>
       <br><br>
@@ -74,10 +81,13 @@
   </div>
 </header>
 
-<h1 class="title">Members </h1><h1 class="title title-bangla" style="margin-top: 10px;"> সদস্য</h1>
-   <div class="sub-heading-main">
-    <h2 style="font-weight: 300;">This page contains the Name, Roll, Class and Section of every member of the ICT club.</h2>
-    <h2 class="text-bangla sub-bangla" style="font-weight: 300;">এই পাতায় আইসিটি ক্লাবের প্রত্যেক সদস্যের নাম, রোল, শ্রেণী, শাখা ‎‎‎‎‎‎‎‎‏‏‎‎‏‏‎ রয়েছে।</h2>
+
+<div class="same-line">
+  <h1 class="title">Members</h1><h1 class="title title-bangla" style="margin-top: 10px;"> সদস্য</h1>
+</div> 
+<div class="sub-heading-main">
+    <h2 style="font-weight: 300; ">This page contains the Name, Roll, Class and Section of every member of the ICT club.</h2>
+    <h2 class="text-bangla sub-bangla" style="font-weight: 300; line-height: 4rem;">এই পাতায় আইসিটি ক্লাবের প্রত্যেক সদস্যের নাম, রোল, শ্রেণী, শাখা ‎‎‎‎‎‎‎‎‏‏‎‎‏‏‎ রয়েছে।</h2>
    </div>
 
    <h1 class="class-no">Class 6</h1>
@@ -415,7 +425,4 @@ new FinisherHeader({
 /* the js library ends here */
 </script>
 </body>
-
 </html>
-
-
