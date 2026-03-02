@@ -10,3 +10,7 @@ Librarys used,
 https://www.finisher.co/lab/header/ a free tool to make animation headers
 
 https://akashraj9828.github.io/svg-text-animation-generator/  a tool to make animated SVGs
+
+
+
+website is live at https://safwan-hayaat.github.io/ICT-Club-of-Siddhanta-High-School/
