@@ -33,6 +33,11 @@
   grid-template-areas: "box-1 box-2";
 }
 /*just making sure that this page looks fine on mobile*/
+@media (min-width: 56em) {
+  .title {
+    margin-top: 5em;
+  }
+}
 @media (max-width: 56em) {
   .credits {
     justify-items: center;
@@ -59,10 +64,16 @@
   h2 {
     text-align: center;
   }
+  .title {
+    margin-top: 1em;
+  }
 }
 @media (max-width: 500px) {
   .para {
     width: 370px;
+  }
+  .title {
+    margin-top: 1em;
   }
 }
 .img-wrapper {
@@ -82,7 +93,6 @@ h1 {
   text-align: center;
 }
 .title {
-  margin-top: 5em;
   color: oklch(from var(--background) calc(l + 0.55) calc(c + 0.05) h);
   font-style: normal;
   text-align: center;
@@ -98,6 +108,9 @@ h2 {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: normal;
+}
+summary {
+  list-style: none;
 }
 p {
   font-weight: 200;
