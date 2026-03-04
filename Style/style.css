@@ -4,8 +4,8 @@
 }
 :root {
   --up-move: -350px;
-  --background: oklch(17.432% 0.02269 283.796);
-  --main-text: oklch(81.974% 0.11626 53.891);
+  --background: #181820;
+  --main-text: #ff887a;
 }
 
 @media (min-width: 1030px) {
@@ -67,6 +67,14 @@
   .sub-heading {
     letter-spacing: 1px;
   }
+  .blogs {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+  "blogs-head blogs-head"
+  "blogs-sub blogs-sub"
+  "eng-blog bn-blog"
+  ;
+    }
 }
 @media (max-width: 1030px) {
   .cool-back {
@@ -130,6 +138,14 @@
     padding-left: 10px;
     font-size: 25px;
   }
+  .blogs {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+  "blogs-head blogs-head"
+  "blogs-sub blogs-sub"
+  "eng-blog bn-blog"
+  ;
+    }
 
   @media (max-width: 900px) {
     .welcome-box {
@@ -150,6 +166,7 @@
       visibility: hidden;
       opacity: 0%;
     }
+
     #Bangla {
       display: none;
     }
@@ -206,6 +223,13 @@
       line-height: 1rem;
       line-height: 2rem;
     }
+    .blogs {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+  "eng-blog eng-blog"
+  "bn-blog bn-blog"
+  ;
+    }
   }
   @media (max-width: 400px) {
     .text-mirpur {
@@ -238,8 +262,9 @@ body::selection {
   background-color: #82ffd599;
 }
 a {
-  color: var(--main-text);
+  color: white;
   text-decoration: none;
+  font-style: normal;
 }
 #open-nav-main:hover {
   backdrop-filter: blur(20px);
@@ -251,7 +276,7 @@ a {
   height: 110vh;
   width: 95vw;
   z-index: 999;
-  background-color: #2b264692;
+  background-color: #534a8492;
   backdrop-filter: blur(10px);
   color: var(--main-text);
   display: none;
@@ -269,7 +294,7 @@ a {
   font-weight: normal;
   font-size: 18px;
 }
-.sidebar li {
+.sidebar, li {
   list-style: none;
 }
 
@@ -294,6 +319,10 @@ header {
   margin-bottom: 0.1em;
   z-index: 997;
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.751);
+}
+.logos-main {
+  width: 140px;
+  height: 140px;
 }
 /*
 .fixed-header {
@@ -424,6 +453,7 @@ header {
   border-radius: 10px;
   padding: 2px 5px;
   text-decoration: underline;
+  text-decoration-color: white;
 }
 .link-to-about:hover {
   background-color: #33333399;
@@ -437,12 +467,12 @@ header {
   margin-top: 10%;
   height: auto;
   padding: 10px 20px;
-  background-color: #3700ff16;
+  background-color: #32408716;
   /*this filter is to achieve a glass effect on the background of the welcome message*/
   backdrop-filter: blur(10px);
-  border-radius: 60px;
-  border-top: 1px solid #9e93ffa0;
-  border-left: 1px solid #a693ffa0;
+  border-radius: 10px;
+  border-top: 1px solid #9a93ffa0;
+  border-left: 1px solid #a593ffa0;
   box-shadow: 20px 20px 10px #0f0f1d45;
   opacity: 0%;
   animation: slick-intro-on 1.5s ease-out 1 forwards;
@@ -537,7 +567,38 @@ header {
   font-weight: 400;
   letter-spacing: 1px;
 }
-
+#blogs {
+  color: white;
+  background-color: #1e1010;
+  padding-top: 10vh;
+}
+.blogs {
+  display: grid;
+  justify-content: center;
+}
+.blogs-main {
+  margin: 0vh 0px 0px 10vw;
+}
+.blogs-bn, .blogs-eng {
+  margin: 20px 0px 20px 10vw;
+  line-height: 3rem;
+  font-weight: 300;
+  color: white;
+}
+.blogs-head {
+  font-size: 70px;
+  margin: 0px;
+  padding-top: 2vh;
+  letter-spacing: 2px;
+  grid-area: blogs-head;
+}
+.blogs-sub {
+  font-weight: 400;
+  letter-spacing: 1px;
+  grid-area: blogs-sub;
+  margin-bottom: 20vh;
+  line-height: 2rem;
+}
 footer {
   background-image: url(https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/i-made-shardscapes-wallpapers-for-both-your-phone-and-pc-v0-ofyzk1kayvzc1.jpg);
 }
