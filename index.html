@@ -124,11 +124,11 @@
         </div>
         <!--this section holds all the logos in the header-->
         <div class="images-header">
-          <img
+          <img class="logos-main"
             src="https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/whatsapp-image-2026-01-12-at-21.04.24_acaad605-1.png?w=300"
             style="width: 165px; height: 150px"
           />
-          <img
+          <img class="logos-main"
             src="https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/ict-club-logo-1.png"
             style="width: 140px; height: 140px; border-radius: 50%"
           />
@@ -171,6 +171,7 @@
               letter-spacing: 1px;
               text-align: center;
               z-index: 10;
+              text-shadow: 0px 0px 20px #000;
             "
           >
             This is the official website of the ICT Club at Mirpur Siddhanta
@@ -253,7 +254,7 @@
     </div>
 
     <div class="teachers-desc">
-      <h2 style="color: #ffaf7a">About the teachers</h2>
+      <h2 style="color: #ff887a">About the teachers</h2>
       <p>
         At Mirpur Siddhanta High School, each club has 3 teachers who lead and
         guide their respective clubs. Right ahead of the committee members, the
@@ -341,6 +342,38 @@
       </div>
     </div>
   </div>
+
+  <div id="blogs">
+
+   <div class="blogs-main">
+    <h1 class="blogs-head">Our Articles on ICT</h1>
+    <h2 class="blogs-sub">Information on ICT, articles and other things we’ve made about the subject explaining our passion and ICT’s impact on our planet</h2>
+   </div>
+  
+   <div class="blogs">
+     <div style="grid-area: eng-blog; ">
+      <h3 class="blogs-eng" style="margin-bottom: 40px; font-size: 30px;">English</h3>
+
+      <li class="blogs-eng"><span class="link-to-about"><a href="">Information and Communication Technology and its history</a></span></li>
+      <li class="blogs-eng"><span class="link-to-about"><a href="">Fields of ICT explained in a simple way</a></span></li>
+      <li class="blogs-eng"><span class="link-to-about"><a href="">A quiz on ICT</a></span></li>
+     </div>
+
+     <div style="grid-area: bn-blog; margin-bottom: 10vh;">
+      <h3 class="blogs-bn" style="margin-bottom: 40px; font-size: 32px;">বাংলা</h3>
+
+      <li class="blogs-bn"><span class="link-to-about"><a href="">তথ্য ও যোগাযোগ প্রযুক্তি এবং এর ইতিহাস।</a></span></li>
+      <li class="blogs-bn"><span class="link-to-about"><a href="">তথ্য ও যোগাযোগ প্রযুক্তির ক্ষেত্রগুলোর সহজ ব্যাখ্যা</a></span></li>
+      <li class="blogs-bn"><span class="link-to-about"><a href="">আইসিতি সম্পর্কিত একটি কুইজ</a></span></li>
+     </div>
+   </div>
+
+  </div>
+
+
+
+
+
     <div class="idk-why-this-works-but-it-does">
       <!--i tried adding a svg animation but for the life of me i cannot get it to work so i just added the source code here, please spare me, this is my first ever project-->
       <style>
@@ -437,7 +470,11 @@
         },
         colors: {
           background: "#0f0f1a",
-          particles: ["#6b8aff", "#cb268e", "#ff7474"],
+          particles: [
+      "#5dc1d7",
+      "#2ebf2f",
+      "#6300cf"
+          ],
         },
         blending: "lighten",
         opacity: {
@@ -448,7 +485,28 @@
         shapes: ["s"],
       });
 
-      /* the js library ends here */
+
+
     </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.globe.min.js"></script>
+<script>
+VANTA.GLOBE({
+  el: "#blogs",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 210.00,
+  minWidth: 210.00,
+  scale: 0.5,
+  scaleMobile: 0.4,
+  color: 0x6161ff,
+  color2: 0xff7b7b,
+  backgroundColor: 0x1e1010
+})
+
+/* all js library' ends here */
+</script>
   </body>
 </html>
