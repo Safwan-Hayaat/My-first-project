@@ -81,22 +81,22 @@
     <form id="ict-club-form" autocomplete="off">
 
     <label style="grid-area: name;">Name<span>(required)</span>
-        <input type="text" name="Full_Name" placeholder="Name" id="name" required>
+        <input type="text" name="Full_Name" placeholder="Your full name in Bangla" id="name" required>
     </label>
 
     <label style="grid-area: phone-num;">Phone-Number
-        <input type="tel" name="Phone_Number" placeholder="Write your phone number here to join the ICT club whatsapp group">
+        <input type="tel" name="Phone_Number" placeholder="Write phone number to join the ICT club whatsapp group">
     </label>
 
     <label style="grid-area: class;">Class<span>(required)</span>
-        <input type="text" name="Class" placeholder="Class" required>
+        <input type="number" name="Class" placeholder="Your class" required>
     </label>
     <label style="grid-area: roll;" >Roll<span>(required)</span>
-        <input type="number" name="Roll" placeholder="Roll" required>
+        <input type="number" name="Roll" placeholder="Your roll number" required>
     </label>
 
     <label style="grid-area: sec;">Section<span>(required)</span>
-        <select name="Section" id="sections" placeholder="Section">
+        <select name="Section" id="sections" placeholder="Your section name">
           <option value="A(ka)">A(ka)</option>
           <option value="B(kha)">B(kha)</option>
           <option value="C(ga)">C(ga)</option>
@@ -144,7 +144,10 @@
         },
         colors: {
           background: "#0f0f1a",
-          particles: ["#6b8aff", "#cb268e", "#ff7474"],
+          particles: [
+      "#5dc1d7",
+      "#2ebf2f",
+      "#6300cf"],
         },
         blending: "lighten",
         opacity: {
