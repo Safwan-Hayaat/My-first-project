@@ -1,0 +1,103 @@
+/*
+   This file has the style for a line on the website. Since the css for that is long,
+   I decided to put it on a separate file
+
+   credits to W3schools
+*/
+:root {
+    --main-text: #ff9387;
+    --background: #181820;
+}
+/* the white line in the middle */
+.timeline {
+  position: relative;
+  width: auto;
+  margin: 0 auto;
+}
+/* Also the white line in the middle */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: hsl(from var(--background) h s calc(l + 10));
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+.container {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  max-width: 90vw;
+}
+/* this puts all the containers that should to the left, to the left */
+.left {
+  left: 0;
+}
+/* same as the last one but for right */
+.right {
+  left: 50%;
+}
+/* has the div with all the writings in it */
+.content {
+  padding: 10px;
+  margin: 2vw 1vw;
+  background-color: hsl(from var(--background) h s calc(l + 10));
+  position: relative;
+  display: grid;
+  grid-template-areas: 
+  "time pic"
+  "event pic"
+  ;
+  min-width: 0px;
+
+}
+/* event para means the paragraph inside the timeline*/
+.event-para {
+    font-size: 22px;
+    line-height: 2rem;
+    align-self: self-end;
+    font-weight: 300;
+}
+/* simply making sure the pictures look right on mobile */
+.picture-timeline {
+    grid-area: pic;
+    text-align: right;
+}
+/* individual margins for each date, so it gives the effect of being spaced out*/
+.sept-2024 {
+    margin-top: 500px;
+}
+.jan-2025 {
+    margin-top: 200px;
+}
+.jan-2026 {
+    margin-top: 300px;
+}
+.april-2026 {
+    margin-top: 100px;
+}
+@media screen and (max-width: 600px) {
+  .timeline::after {
+  left: 31px;
+  }
+  .container {
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 25px;
+  }
+  .content {
+      grid-template-areas: 
+  "pic"
+  "time"
+  "event"
+  ;
+  }
+  .right {
+  left: 0%;
+  }
+  .picture-timeline {
+    text-align: center;
+  }
+}
