@@ -5,12 +5,9 @@
 :root {
   --head-2: 30px;
   --background: oklch(21.276% 0.0157 284.976);
-  --main-text: oklch(75.532% 0.14667 27.508);
+  --main-text: #ff9387;
 }
 @media (min-width: 900px) {
-  .title {
-    margin-top: 4em;
-  }
   .sub-heading-main {
     display: grid;
     margin-left: 20vw;
@@ -42,9 +39,6 @@
   }
 }
 @media (max-width: 900px) {
-  .title {
-    margin-top: 1em;
-  }
   .sub-heading-main {
     margin: 0px;
     width: 100vw;
@@ -82,8 +76,9 @@
   text-align: center;
   font-size: 5rem;
   margin-bottom: 0%;
+  margin-top: 15rem;
   font-weight: 400;
-  font-family: "Oxanium", sans-serif;
+  font-family: "Bree Serif", serif;
 }
 .same-line {
   display: flex;
@@ -124,12 +119,7 @@ td {
   font-weight: 300;
 }
 table {
-  background-image: linear-gradient(
-    to top,
-    hsl(6, 100%, 92%),
-    hsl(323, 100%, 92%),
-    hsl(275, 100%, 92%)
-  );
+background-image: linear-gradient(to bottom, #ff9387, #ff9279, #ff926a);
 }
 table,
 td {
