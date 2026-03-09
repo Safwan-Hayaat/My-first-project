@@ -2,7 +2,7 @@
 :root {
   --head-2: 30px;
   --background: #181820;
-  --main-text: #ff887a;
+  --main-text: #ff9387;
 }
 /* DISPLAY GRIIIIIDDDDDD */
 .credits {
@@ -33,11 +33,7 @@
   grid-template-areas: "box-1 box-2";
 }
 /*just making sure that this page looks fine on mobile*/
-@media (min-width: 56em) {
-  .title {
-    margin-top: 5em;
-  }
-}
+
 @media (max-width: 56em) {
   .credits {
     justify-items: center;
@@ -64,16 +60,10 @@
   h2 {
     text-align: center;
   }
-  .title {
-    margin-top: 1em;
-  }
 }
 @media (max-width: 500px) {
   .para {
     width: 370px;
-  }
-  .title {
-    margin-top: 1em;
   }
 }
 .img-wrapper {
@@ -98,8 +88,9 @@ h1 {
   text-align: center;
   font-size: 5rem;
   margin-bottom: 0%;
+  margin-top: 15rem;
   font-weight: 400;
-  font-family: "Oxanium", sans-serif;
+  font-family: "Bree Serif", serif;
 }
 
 h2 {
