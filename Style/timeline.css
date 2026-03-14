@@ -4,15 +4,11 @@
 
    credits to W3schools
 */
-:root {
-    --main-text: #ff9387;
-    --background: #181820;
-}
 /* the white line in the middle */
 .timeline {
   position: relative;
   width: auto;
-  margin: 0 auto;
+  margin: 100px auto;
 }
 /* Also the white line in the middle */
 .timeline::after {
