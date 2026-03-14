@@ -1,6 +1,6 @@
 :root {
-  --background: #181820;
-  --main-text: #ff887a;
+  --background: #000814;
+  --main-text: #f1fffa;
 }
 @media (min-width: 900px) {
  .full-form {
@@ -55,7 +55,7 @@ body {
   font-size: 4rem;
   margin-bottom: 0%;
   font-weight: 400;
-  font-family: "Oxanium", sans-serif;
+  font-family: "Bree Serif", serif;
 }
 label {
     margin-bottom: 5px;
