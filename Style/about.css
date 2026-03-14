@@ -75,7 +75,8 @@
   letter-spacing: 2px;
   line-height: 1.5rem;
 }
-h1 {
+/*this means everything on h1 aside from the footer gets the property's below*/
+h1:not(.main-footer) {
   font-weight: 500;
   color: oklch(from var(--background) calc(l + 0.5) calc(c + 0.04) h);
   font-size: 3rem;
@@ -103,7 +104,8 @@ h2 {
 summary {
   list-style: none;
 }
-p {
+/* the :not([small]) here is making sure the attribute "small" (which has been given to the paragraphs on the footer) arent effected by this*/
+p:not([small]) {
   font-weight: 200;
   letter-spacing: 2px;
   font-size: large;
