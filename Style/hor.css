@@ -1,0 +1,145 @@
+/*This is a css file to make a horizontal scrolling gallery, inspired from lnadonorris.com and i learned to make this from Bramus.*/
+
+
+.gallery-main {
+  height: 600vh;
+  overflow: clip;
+  view-timeline-name: --cool-move;
+	view-timeline-axis: block;  
+  background-image: url(https://shiddhantaict.wordpress.com/wp-content/uploads/2026/01/coolbackgrounds-particles-oxygen.png?w=1024);
+}
+.gallery-main::selection {
+    background-color: var(--background);
+    color: var(--main-text);
+    background-repeat: repeat;
+}
+.gallery-text {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: 40px;
+    font-family: 'Bree serif', serif;
+}
+.gallery-desc {
+  font-weight: 300;
+  color: hsl(from var(--background) h s calc(l + 40));
+}
+/*The gallery holder is position sticky but it also has a animation which makes the entire thing move left based on scroll.*/
+.gallery-holder-sticky {
+  padding-top: 10vh;  /*the padding is there becuase the header makes the gallery look misaligned*/ 
+  color: var(--background);
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  animation: horizontal linear forwards;
+  animation-timeline: --cool-move;
+  animation-range: contain 0% contain 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .gallery-text {
+  width: 70vw;
+  }
+  .gallery-img {
+    padding: 5vh 5vw;
+  }
+  .g1 {
+    width: 50vw;
+  }
+  .g2 {
+  width: 35vw;
+ }
+ .g3 {
+  width: 40vw;
+  margin: 0vh 10vw;
+}
+ .gd3 {
+  padding: 0px 15vw;
+ }
+  .g4 {
+  width: 20vw;
+  align-self: self-start;
+ }
+ .g5 {
+  width: 40vw;
+ }
+ .g6 {
+  width: 50vw;
+ }
+.g7 {
+  width: 50vw;
+ }
+.g8 {
+  width: 50vw; 
+ }
+}
+
+@media screen and (max-width: 900px) {
+  .gallery-holder-sticky {
+    animation: horizontal-mobile linear forwards;
+    animation-timeline: --cool-move;
+    animation-range: contain 0% contain 100%;
+  }
+  .gallery-text {
+  font-size: 30px;
+  width: 150vw;
+  }
+  .g1 {
+    width: 95vw;
+  }
+  .g2 {
+  width: 80vw;
+ }
+  .gallery-img {
+    padding: 10vh 10vw;
+  }
+  .g3 {
+  width: 70vw;
+  margin: 0vh 20vw;
+  }
+ .gd3 {
+  padding: 0px 30vw;
+ }
+ .g4 {
+  width: 50vw;
+  align-self: self-start;
+ }
+ .g5 {
+  width: 95vw;
+ }
+ .g6 {
+  width: 95vw;
+ }
+.g7 {
+  width: 95vw;
+ }
+.g8 {
+  width: 95vw; 
+ }
+}
+
+@keyframes horizontal {
+  from {
+    transform: translateX(0);
+    background-size: 100%;
+  }
+  to {
+    transform: translateX(calc(-100% + -250vw));
+    background-size: 120%;
+  }
+}
+
+/* i had to make another one for mobile because the animation doesnt go left enough on mobile*/
+@keyframes horizontal-mobile {
+  from {
+    transform: translateX(0);
+    background-size: 100%;
+  }
+  to {
+    transform: translateX(calc(-100% + -630vw));
+    background-size: 120%;
+  }
+}
