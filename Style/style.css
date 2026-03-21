@@ -485,10 +485,10 @@ header {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #2f2f3d;
+  background-image: url(header-background.png);
   width: 100vw;
   height: auto;
-  border-bottom: 2px solid var(--main-text);
+  border-bottom: 2px solid hsl(from var(--background) h s calc(l + 20));;
   font-family: "Karla", sans-serif;
   font-weight: 300;
   font-optical-sizing: auto;
