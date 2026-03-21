@@ -1,0 +1,148 @@
+/*This css file covers the style for all blogs on this website at the same time*/
+:root {
+    --main-text: #f1fffa;
+    --background-color: #181820;
+}
+* {
+    font-weight: 200;
+}
+.blog-header {
+    background-color: var(--main-text);
+    color: var(--background-color);
+    padding: 25vh 40vw 20vh 10vw;
+    margin: 0;
+}
+.blog-header::selection {
+    background-color: var(--background-color);
+    color: var(--main-text);
+}
+.title {
+    font-family: 'Bree serif', serif;
+    font-size: 80px;
+    margin: 0;
+}
+.date {
+    color: hsl(from var(--background-color) h s calc(l + 40));
+}
+.credits {
+    color: hsl(from var(--background-color) h s calc(l + 30))
+}
+h6 {
+    font-size: 25px;
+}
+.blog-desc {
+    margin: 0;
+    font-size: 13px;
+    text-align: left;
+    line-height: 1rem;
+}
+[grey]:hover {
+    color: hsl(from var(--background-color) h s calc(l + 50));
+}
+#intro {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    justify-items: center;
+    grid-template-areas:
+    "nav p pic" 
+    ;
+    margin-bottom: 300px;
+}
+#musa {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    justify-items: center;
+    grid-template-areas: 
+    "nav pic p"
+    "nav pic-2 p"
+    ;
+    margin-bottom: 300px;
+}
+#turing {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    justify-items: center;
+    grid-template-areas:
+    "nav p pic" 
+    "nav p pic-2"
+    ;
+    margin-bottom: 300px;
+}
+#bose {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    justify-items: center;
+    grid-template-areas: 
+    "nav pic p"
+    "nav pic-2 p"
+    ;
+    margin-bottom: 300px;
+}
+#conclusion {
+    padding: 0vh 30vw;
+    margin-bottom: 300px;
+}
+.article-content {
+    text-align: center;
+
+    letter-spacing: 1px;
+    line-height: 3rem;
+}
+#musa > h6, #bose > h6 {
+    text-align: left;
+}
+@media (min-width: 900px) {
+    
+}
+@media (max-width: 900px) {
+    .title {
+        font-size: 45px;
+    }
+    .content-box {
+        display: none;
+    }
+    #intro {
+        grid-template-areas: 
+        "p"
+        "pic"
+        ;
+    }
+    #musa, #turing, #bose {
+        grid-template-areas: 
+        "pic"
+        "p"
+        "pic-2"
+        ;
+        grid-template-columns: 1fr;
+        overflow-x: scroll;
+    }
+    #conclusion {
+        padding: 0vh 5vw;
+    }
+    #musa > h6, #turing > h6, #bose > h6 {
+        text-align: center;
+    }
+    .blog-img-stock {
+        width: 100vw;
+    }
+    .blog-img-turing, .blog-img-bombe, .blog-img-khwarizmi, .blog-img-bose, .blog-img-cresc {
+        width: 99vw;
+        height: auto;
+    }
+    h6 {
+        font-size: 18px;
+    }
+}
+/*The content box has links to the different sections of an article*/
+.content-box {
+    position: sticky;
+    top: 15%;
+    padding: 5vh 5vw;
+    text-align: left;
+}
+.nav-article {
+    font-size: 17px;
+    padding-left: 20px;
+    border-left: 2px solid hsl(from var(--background) h calc(s - 100) calc(l + 40));
+    margin-left: 10px;
+}
