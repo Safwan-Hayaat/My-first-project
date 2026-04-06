@@ -17,6 +17,9 @@
   .sub-bangla {
     font-size: 50px;
   }
+  .title {
+    font-size: 5rem;
+  }
   table {
     width: 60vw;
   }
@@ -42,10 +45,16 @@
   .sub-heading-main {
     margin: 0px;
     width: 100vw;
-    font-size: 25px;
+    font-size: 15px;
   }
   .sub-bangla {
-    font-size: 40px;
+    font-size: 24px;
+  }
+  .title {
+    font-size: 4rem;
+  }
+  .title-bangla {
+    font-size: 4rem;
   }
   table {
     width: 100vw;
@@ -74,7 +83,6 @@
   color: oklch(from var(--background) calc(l + 0.55) calc(c + 0.05) h);
   font-style: normal;
   text-align: center;
-  font-size: 5rem;
   margin-bottom: 0%;
   margin-top: 15rem;
   font-weight: 400;
@@ -119,7 +127,7 @@ td {
   font-weight: 300;
 }
 table {
-background-image: linear-gradient(to top, #4797ff, #7efff9);
+  background-image: linear-gradient(to top, #96e6a1, #a7fc79);
 }
 table,
 td {
